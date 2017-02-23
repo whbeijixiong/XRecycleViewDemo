@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/img"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@mipmap/ic_launcher"
+        />
+    <TextView
+        android:id="@+id/age"
+        android:text="00"
+        android:textSize="25sp"
+        android:layout_below="@+id/img"
+        android:background="@drawable/shapebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age"
+        android:text="123"
+        android:textSize="15dp" />
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textColor="@color/yellow"
+        android:layout_above="@+id/join"
+        android:layout_toRightOf="@+id/age"
+        android:layout_toEndOf="@+id/age"
+        android:layout_marginBottom="44dp" />
+
+    <TextView
+        android:id="@+id/join"
+        android:text="00"
+        android:textSize="25sp"
+        android:background="@drawable/shapebuttongreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_toRightOf="@+id/age"
+       />
+
+
+</RelativeLayout>
